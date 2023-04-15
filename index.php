@@ -3,10 +3,10 @@
 class Movie 
 {
     public $nome = 'titolo';
-    public $genere = 'sconosciuto'; // sia titolo che sconosciuto sono valori di default che assegno con =
+    public $genere = ['sconosciuto', 'sconosciuto']; // sia titolo che sconosciuto sono valori di default che assegno con =
     private $durata;
 
-    function __construct($_nome, $_genere, $_durata = '>40 min')
+    function __construct($_nome, array $_genere, $_durata = '>40 min')
     {
         $this->durata = $_durata;
         $this->nome = $_nome;
@@ -28,9 +28,9 @@ class Movie
     }
 }
 
-$titanic = new Movie('Titanic', 'drammatico', 194);
-$matrix = new Movie('Matrix', 'Sci-fi/Azione', 136);
-$alien = new Movie('Alien', 'Sci-fi/Horror', 117);
+$titanic = new Movie('Titanic', ['drammatico'], 194);
+$matrix = new Movie('Matrix', ['Sci-fi', 'Azione', 'Premiato'], 136);
+$alien = new Movie('Alien', ['Sci-fi', 'Horror'], 117);
  
 //var_dump($titanic->getName()); //non serve $ dopo la freccia
 //var_dump($alien);
