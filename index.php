@@ -32,8 +32,11 @@ $titanic = new Movie('Titanic', 'drammatico', 194);
 $matrix = new Movie('Matrix', 'Sci-fi/Azione', 136);
 $alien = new Movie('Alien', 'Sci-fi/Horror', 117);
  
-var_dump($titanic->getName()); //non serve $ dopo la freccia
-var_dump($alien);
+//var_dump($titanic->getName()); //non serve $ dopo la freccia
+//var_dump($alien);
 //echo $titanic->name;
+print_r($titanic);
+var_dump($matrix);
+print_r($alien);
 
-echo $titanic->timeproblem();
+//echo $titanic->timeproblem();
