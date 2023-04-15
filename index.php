@@ -31,12 +31,17 @@ class Movie
 $titanic = new Movie('Titanic', ['drammatico'], 194);
 $matrix = new Movie('Matrix', ['Sci-fi', 'Azione', 'Premiato'], 136);
 $alien = new Movie('Alien', ['Sci-fi', 'Horror'], 117);
- 
+//$c = new Movie('dd', 'sss'); prova per me
+
 //var_dump($titanic->getName()); //non serve $ dopo la freccia
 //var_dump($alien);
 //echo $titanic->name;
+
+
 print_r($titanic);
 var_dump($matrix);
 print_r($alien);
+//var_dump($c); prova per me
+
 
 //echo $titanic->timeproblem();
